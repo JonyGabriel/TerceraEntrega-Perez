@@ -117,7 +117,7 @@ export const purchaseCart = async (req, res) => {
     const cartUpdateProducts = await cartsService.updateCartProducts(cid, unavailableProducts)
 
     transport.sendMail({
-      from: "ezequielcanan@gmail.com",
+      from: "jonygabriiel@gmail.com",
       to: req?.user?.user?.email,
       subject: "Compra realizada",
       html: "<h1>Realizaste la compra</h1>"
